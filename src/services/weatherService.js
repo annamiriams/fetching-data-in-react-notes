@@ -9,6 +9,7 @@
 const API_KEY = '90348aeb047543a49b6225413252003';
 const BASE_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
 
+// service function built out so we can export it to the React component
 const show = async (city) => {
     try {
         // queryString matches the url we got from weatherapi.com that was location specific
