@@ -9,6 +9,7 @@ const WeatherSearch = (props) => {
     const handleSubmit = (e) => {
         // prevent the form's default behavior of refreshing the page every time form is submitted
         e.preventDefault();
+        props.fetchData(city); // Don't forget to pass city state!
         // We'll call the fetch function here
         setCity('');
     };
